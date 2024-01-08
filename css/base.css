@@ -1,0 +1,44 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 14px;
+  --color-text: #f0f0f0;
+  --color-bg: #000;
+  --color-link: #aaa;
+  --color-link-hover: #fff;
+  --page-padding: 1rem;
+}
+
+html,
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  font-family: "area-normal", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 120px;
+}
+
+.box {
+  height: 400px;
+  width: 400px;
+  background: #333;
+  margin-bottom: 80px;
+}
