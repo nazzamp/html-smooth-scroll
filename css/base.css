@@ -42,3 +42,48 @@ main {
   background: #333;
   margin-bottom: 80px;
 }
+
+.box-text {
+  font-size: 40px;
+}
+
+.gtext {
+  line-height: 1;
+  margin: 0;
+  display: grid;
+  font-weight: 400;
+  justify-content: center;
+  white-space: nowrap;
+  --text-width: 100px;
+  --gsplits: 4;
+  --gcolor: #fff;
+  --gsize: 5rem;
+  font-size: var(--gsize);
+  color: var(--gcolor);
+  --offset: calc(var(--text-width) / var(--gsplits));
+  grid-template-columns: repeat(var(--gsplits), var(--offset));
+}
+
+.gtext__box {
+  overflow: hidden;
+  position: relative;
+  will-change: transform;
+  margin-right: -0.5px;
+}
+
+.gtext__box-inner {
+  width: max-content;
+  position: relative;
+  display: block;
+  will-change: transform;
+}
+
+.content {
+  display: grid;
+}
+
+.content--full {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
